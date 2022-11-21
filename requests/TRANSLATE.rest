@@ -1,0 +1,8 @@
+POST http://localhost:3003/api/translate
+Content-Type: application/json
+
+{
+	"toLang": "Italian",
+	"sourceLang": "English",
+	"text": "Hello World"
+}

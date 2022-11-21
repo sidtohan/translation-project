@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif !important;
+  background-color: rgb(104, 64, 203);
+}
+.box {
+  width: 300px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background: white;
+  text-align: center;
+}
+.box h1 {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: rgb(104, 64, 203);
+}
+.input-holder,
+.input-holder-translate {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.input-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  height: 25px;
+  width: auto;
+  z-index: 1;
+}
+.box input[type="text"],
+.box input[type="password"] {
+  display: block;
+  text-align: center;
+  border: 4px;
+  padding: 14px 10px;
+  width: 100%;
+  border-radius: 25px;
+  transition: 0.1s ease-in-out;
+  font-family: Poppins;
+  border: 1px solid rgb(104, 64, 203);
+  font-size: 15px;
+  margin: 10px 0;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  transform: scale(1.03);
+  transition: 0.1s ease-in-out;
+  outline: 1px solid rgb(104, 64, 203);
+}
+.box button[type="submit"] {
+  border: 11;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 4px;
+  padding: 14px 10px;
+  width: 120px;
+  border-radius: 25px;
+  transition: 0.25px;
+  cursor: pointer;
+  background-color: rgb(104, 64, 203);
+  font-family: Poppins;
+  color: white;
+}
+
+.translate-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 75%;
+  max-width: 600px;
+  gap: 20px;
+  padding: 30px;
+}
+
+.texts-holder,
+.language-selector {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+#text,
+#translated-text,
+#to-lang,
+#source-lang {
+  width: 40%;
+  height: 300px;
+  font-family: Poppins;
+  border: 5px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid rgb(104, 64, 203);
+  border-radius: 10px;
+}
+#to-lang,
+#source-lang {
+  height: 40px;
+  font-size: 15px;
+  padding: 0px;
+  border-radius: 50px;
+  margin: 10px;
+}
+#translate-button {
+  border-radius: 50%;
+  margin: 20px;
+  height: 50px;
+  width: 50px;
+}
+#translate-button > svg {
+  display: block;
+  height: 80%;
+  width: auto;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
